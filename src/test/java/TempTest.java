@@ -29,8 +29,8 @@ public class TempTest {
         driver = new ChromeDriver(options);
 
         driver.get("https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin");
-        driver.findElement(By.id("username")).sendKeys("epictestbuster@gmail.com");
-        driver.findElement(By.id("password")).sendKeys("grey@123");
+        driver.findElement(By.id("username")).sendKeys("Username");
+        driver.findElement(By.id("password")).sendKeys("Password");
         driver.findElement(By.cssSelector("div#app__container button[type=\"submit\"]")).click();
 
         driver.get("https://uat-commit.live/success-stories");
